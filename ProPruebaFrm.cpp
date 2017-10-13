@@ -48,7 +48,9 @@ void ProPruebaFrm::CreateGUIControls()
 	//Add the custom code before or after the blocks
 	////GUI Items Creation Start
 
-	WxButton1 = new wxButton(this, ID_WXBUTTON1, _("WxButton1"), wxPoint(69, 106), wxSize(75, 25), 0, wxDefaultValidator, _("WxButton1"));
+	WxCalendarCtrl1 = new wxCalendarCtrl(this, ID_WXCALENDARCTRL1, wxDateTime(13,(wxDateTime::Month)10,2017),wxPoint(46, 102), wxSize(205, 158), wxCAL_SUNDAY_FIRST | wxCAL_SHOW_HOLIDAYS | wxCAL_NO_MONTH_CHANGE | wxCAL_SHOW_SURROUNDING_WEEKS | wxCAL_SEQUENTIAL_MONTH_SELECTION);
+
+	WxButton1 = new wxButton(this, ID_WXBUTTON1, _("WxButton1"), wxPoint(75, 45), wxSize(75, 25), 0, wxDefaultValidator, _("WxButton1"));
 
 	SetTitle(_("ProPrueba"));
 	SetIcon(wxNullIcon);

@@ -26,6 +26,7 @@
 //Header Include Start and Header Include End.
 //wxDev-C++ designer will remove them. Add custom headers after the block.
 ////Header Include Start
+#include <wx/calctrl.h>
 #include <wx/button.h>
 ////Header Include End
 
@@ -48,6 +49,7 @@ class ProPruebaFrm : public wxFrame
 		//GUI Control Declaration Start and GUI Control Declaration End.
 		//wxDev-C++ will remove them. Add custom code after the block.
 		////GUI Control Declaration Start
+		wxCalendarCtrl *WxCalendarCtrl1;
 		wxButton *WxButton1;
 		////GUI Control Declaration End
 		
@@ -59,6 +61,7 @@ class ProPruebaFrm : public wxFrame
 		enum
 		{
 			////GUI Enum Control ID Start
+			ID_WXCALENDARCTRL1 = 1002,
 			ID_WXBUTTON1 = 1001,
 			////GUI Enum Control ID End
 			ID_DUMMY_VALUE_ //don't remove this value unless you have other enum values
